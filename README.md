@@ -51,7 +51,10 @@ CREATE TABLE clients (
     date_inscription DATE,
     canal_acquisition VARCHAR(255)
 );
+```
 
+
+```sql
 CREATE TABLE produits (
     id_produit INT PRIMARY KEY,
     nom_produit VARCHAR(255),
@@ -60,7 +63,9 @@ CREATE TABLE produits (
     marge NUMERIC(10,2),
     stock_initial INT
 );
+```
 
+```sql
 CREATE TABLE ventes (
     id_vente INT PRIMARY KEY,
     id_client INT REFERENCES clients(id_client),
@@ -70,13 +75,16 @@ CREATE TABLE ventes (
     montant_total NUMERIC(10,2),
     channel VARCHAR(255)
 );
+```
 
+```sql
 CREATE TABLE paiements (
     id_paiement INT PRIMARY KEY,
     id_vente INT REFERENCES ventes(id_vente),
     methode VARCHAR(255),
     statut VARCHAR(255)
 );
+```
 
  SELECT * FROM clients
       LIMIT 10;
