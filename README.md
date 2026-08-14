@@ -77,7 +77,7 @@ CREATE TABLE paiements (
     methode VARCHAR(255),
     statut VARCHAR(255)
 );
- 
+ /*l'ensemble des données  proviennent des differents fichiers excel et ont été importés via *postgresql* /*
  SELECT * FROM clients
       LIMIT 10;
 
