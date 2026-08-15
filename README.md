@@ -42,9 +42,9 @@ Le projet repose sur 4 tables relationnelles :
 
 ### 1. DDL : Création de la Base de Données
 
-```sql
-> * Creation de la table client *
 
+> * Creation de la table client *
+```sql
 CREATE TABLE clients (
     id_client INT PRIMARY KEY,
     nom VARCHAR(255),
@@ -56,9 +56,8 @@ CREATE TABLE clients (
 ```
 
 
-```sql
-
 > * Creation de la table produits *
+```sql
 CREATE TABLE produits (
     id_produit INT PRIMARY KEY,
     nom_produit VARCHAR(255),
@@ -81,7 +80,7 @@ CREATE TABLE ventes (
     channel VARCHAR(255)
 );
 ```
-
+> * Creation de la table paiements *
 ```sql
 CREATE TABLE paiements (
     id_paiement INT PRIMARY KEY,
