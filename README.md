@@ -43,7 +43,7 @@ Le projet repose sur 4 tables relationnelles :
 ### 1. DDL : Création de la Base de Données
 
 
-> * Creation de la table client *
+> * Creation de la table client 
 ```sql
 CREATE TABLE clients (
     id_client INT PRIMARY KEY,
@@ -56,7 +56,7 @@ CREATE TABLE clients (
 ```
 
 
-> * Creation de la table produits *
+> * Creation de la table produits 
 ```sql
 CREATE TABLE produits (
     id_produit INT PRIMARY KEY,
@@ -69,7 +69,7 @@ CREATE TABLE produits (
 ```
 
 ```sql
-> * Creation de la table vente *
+> * Creation de la table vente 
 CREATE TABLE ventes (
     id_vente INT PRIMARY KEY,
     id_client INT REFERENCES clients(id_client),
@@ -80,7 +80,7 @@ CREATE TABLE ventes (
     channel VARCHAR(255)
 );
 ```
-> * Creation de la table paiements *
+> * Creation de la table paiements 
 ```sql
 CREATE TABLE paiements (
     id_paiement INT PRIMARY KEY,
@@ -90,7 +90,7 @@ CREATE TABLE paiements (
 );
 ```
 
-/* l' ensembles des elements de la base de données est integrer via posgresql , via importation /*
+/* l' ensembles des elements de la base de données est integrer via posgresql , via importation */
 
 ```sql
  SELECT * FROM clients
