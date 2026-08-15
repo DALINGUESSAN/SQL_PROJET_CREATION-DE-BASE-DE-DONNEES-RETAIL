@@ -68,8 +68,8 @@ CREATE TABLE produits (
 );
 ```
 
-```sql
 > * Creation de la table vente 
+```sql
 CREATE TABLE ventes (
     id_vente INT PRIMARY KEY,
     id_client INT REFERENCES clients(id_client),
@@ -90,7 +90,7 @@ CREATE TABLE paiements (
 );
 ```
 
-/* l' ensembles des elements de la base de données est integrer via posgresql , via importation */
+> * l' ensembles des elements de la base de données est integrer via posgresql , via importation 
 
 ```sql
  SELECT * FROM clients
